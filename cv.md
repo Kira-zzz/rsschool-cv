@@ -10,7 +10,8 @@
 ☎️  +375 29 138 90 24  
 📧 kira.zaytseva97@gmail.com  
 💬 [Linkedin](https://www.linkedin.com/in/kira-zaytseva/)  
-💻 [Github](https://github.com/kira-zaytseva)
+💻 [Github](https://github.com/kira-zaytseva)  
+🗣 Discord: Kira_zayts#7305
 
 ***
 
