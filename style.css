@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'PT Sans', sans-serif;
     min-height: 100vh;
@@ -18,36 +22,13 @@ body {
     background-color: rgba(166 192 122 / 18%);
 }
 
-.header-info {
-    width: 100%;
-    min-height: 420px;
-    padding: 0 50px 20px 50px;
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-}
-
-.header-text {
-    padding: 30px 50px 30px 373px;
-}
-
-.info-name {
-    font-size: 40px;
-}
-
-.info-profession {
-    font-size: 24px;
-    font-style: italic;
-}
-
-.info-description {
-    font-size: 18px;
-    margin-bottom: 0;
-}
-
 .container {
     max-width: 1440px;
     margin: 0 auto;
+}
+
+.header .container {
+    position: relative;
 }
 
 .nav {
@@ -86,6 +67,15 @@ body {
     text-decoration: underline;
 }
 
+.header-info {
+    width: 100%;
+    min-height: 420px;
+    padding: 0 50px 20px 50px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
 .profile-photo {
     width: 40%;
     max-width: 300px;
@@ -94,22 +84,22 @@ body {
     left: 60px;
 }
 
-html {
-    scroll-behavior: smooth;
+.header-text {
+    padding: 30px 50px 30px 373px;
 }
 
-.section-item a {
-    color: #829985;
-    text-decoration: none;
-    transition: color 0.5s;
+.info-name {
+    font-size: 40px;
 }
 
-.section-item a:hover {
-    color: #4d2323;
+.info-profession {
+    font-size: 24px;
+    font-style: italic;
 }
 
-.header .container {
-    position: relative;
+.info-description {
+    font-size: 18px;
+    margin-bottom: 0;
 }
 
 .main-container {
@@ -123,6 +113,16 @@ html {
     width: 50%;
     padding-right: 50px;
 }
+
+/* .section-item a {
+    color: #829985;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.section-item a:hover {
+    color: #4d2323;
+} */
 
 .contacts-list a, .github, .project-name, .company-name {
     text-decoration: none;
@@ -143,7 +143,7 @@ html {
     margin-bottom: 0;
 }
 
-.speciality, .job-title {
+.speciality, .job-title, .courses-name {
     font-style: italic;
     margin-top: 0;
 }
@@ -157,21 +157,38 @@ html {
     text-decoration: underline;
 }
 
-.github:hover {
-    text-decoration: underline;
+#projects {
+    width: max-content;
 }
 
-.markdown-project-image {
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.project-example {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title {
+    align-items: center;
+    
+}
+
+.project-image {
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     cursor: pointer;
-    max-width: 744px;
-    max-height: 392px;
+    max-width: 600px;
+    max-height: 315px;
     width: 90%;
 
 }
 
-.markdown-project-image:hover {
+.project-image:hover {
     transform: scale(1.1);
     transition: 0.5s;
 }
@@ -184,18 +201,16 @@ html {
     text-decoration: underline;
 }
 
-#projects {
-    display: flex;
-    flex-direction: column;
-    width: max-content;
-}
-
 .footer-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
     background-color: rgb(166 192 122 / 18%);
+}
+
+.github:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
