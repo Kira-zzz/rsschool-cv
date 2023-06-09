@@ -124,13 +124,17 @@ body {
     color: #4d2323;
 } */
 
-.contacts-list a, .github, .project-name, .company-name {
+.contacts-list a,
+.github,
+.project-name,
+.company-name {
     text-decoration: none;
     color: rgb(96 114 51);
     cursor: pointer;
 }
 
-.contacts-list, .github {
+.contacts-list,
+.github {
     list-style: none;
 }
 
@@ -138,17 +142,21 @@ body {
     text-decoration: underline;
 }
 
-.education-years, .work-years {
+.education-years,
+.work-years {
     text-decoration: underline;
     margin-bottom: 0;
 }
 
-.speciality, .job-title, .courses-name {
+.speciality,
+.job-title,
+.courses-name {
     font-style: italic;
     margin-top: 0;
 }
 
-.university-name, .company-name {
+.university-name,
+.company-name {
     margin: 0;
     padding: 0;
 }
@@ -175,17 +183,16 @@ body {
 
 .project-title {
     align-items: center;
-    
 }
 
 .project-image {
     margin-top: 15px;
     margin-bottom: 20px;
     cursor: pointer;
-    max-width: 600px;
+    max-width: 500px;
     max-height: 315px;
     width: 90%;
-
+    object-fit: cover;
 }
 
 .project-image:hover {
@@ -193,7 +200,7 @@ body {
     transition: 0.5s;
 }
 
-.project-name { 
+.project-name {
     text-align: center;
 }
 
@@ -217,27 +224,27 @@ body {
 
     .profile-photo {
         position: relative;
-     }
+    }
 
-     .header-text {
+    .header-text {
         padding: 0;
-     }
+    }
 
-     .info-name {
+    .info-name {
         font-size: 32px;
-     }
+    }
 
-     .info-profession {
+    .info-profession {
         font-size: 24px;
-     }
-     
-     .info-description {
-        font-size: 14px;
-     }
+    }
 
-     .nav {
+    .info-description {
+        font-size: 14px;
+    }
+
+    .nav {
         padding: 0;
-     }
+    }
 
     .section {
         width: 100%;
